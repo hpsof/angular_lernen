@@ -1,6 +1,23 @@
 'use strict';
 
-angular.module('tutorialApp', ['ngAnimate'])
+angular.module('tutorialApp', ['ngAnimate', 'ngRoute'])
+    .config(function($routeProvider) {
+        $routeProvider
+            .when('/', { templateUrl: 'articles.html' })
+            .when('/about', { template: '&Uuml;ber unsere Pizzeria' })
+            .otherwise({ redirectTo: '/'});
+    })
+
+    .directive('price', function(){
+        return {
+            restrict: 'E',
+            scope: {
+                value: '='
+            },
+            template: '<span ng-show="value == 0">kostenlos</span>' +
+            '<span ng-show="value > 0">{{value | currency}}</span>'
+        };
+    })
 
     .factory('Cart', function() {
         var items = [];

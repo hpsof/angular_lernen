@@ -1,8 +1,8 @@
 angular_lernen
 ==============
-- zum ueben /frisch angefangen: 10.11.2014 10:55:58
 
-- http://angularjs.de/artikel/angularjs-tutorial-deutsch
+zum ueben /frisch angefangen: 10.11.2014 10:55:58
+- http://angularjs.de/artikel/angularjs-tutorial-deutsch durchgearbeitet
 
 
 lokal einmalig:
